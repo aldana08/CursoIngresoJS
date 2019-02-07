@@ -5,10 +5,10 @@ function mostrar()
     var nombre;
     nombre="Aldana";
 
-    prompt("Ingrese su nombre");
+    nombre=prompt("Ingrese su nombre");
     
-    alert("Aldana");
+    alert(nombre);
 
-    nombre=prompt();
+    
 }
 
