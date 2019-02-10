@@ -26,15 +26,15 @@ function restar()
     var num2
     var resta
 
-    num1=document.getElementById("numeroUno").value;
-    num2=document.getElementById("numeroDos").value;
+    num1 = document.getElementById("numeroUno").value;
+    num2 = document.getElementById("numeroDos").value;
 
-    num1=parseInt(num1);
-    num2=parseInt(num2);
+    num1 = parseInt(num1);
+    num2 = parseInt(num2);
 
-    resta=num1 - num2;
+    resta = num1 - num2;
 
-    alert("La resta es " - resta);
+    alert("La resta es " + resta);
 }
 
 function multiplicar()
@@ -51,7 +51,7 @@ function multiplicar()
 
     multi=num1 * num2;
 
-    alert("La multiplicacion es " * multi);
+    alert("La multiplicacion es " + multi);
 }
 
 function dividir()
@@ -68,7 +68,7 @@ function dividir()
 
     divid=num1 / num2;
 
-    alert("La division es " * divid);
+    alert("La division es " + divid);
 	
 }
 
