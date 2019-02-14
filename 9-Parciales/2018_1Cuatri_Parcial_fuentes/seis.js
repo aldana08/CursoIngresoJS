@@ -34,7 +34,7 @@ function mostrar()
         break;
     }
 
-    if(12 && 19){
+    if(hora){
 
         console.log("es de tarde");
     }
