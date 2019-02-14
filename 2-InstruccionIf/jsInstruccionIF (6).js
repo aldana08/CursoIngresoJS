@@ -9,18 +9,15 @@ edad = document.getElementById("edad").value;
 edad = parseInt(edad);
 
 if(edad >=13 && edad<= 17){
-
     alert("eres adolescente");
 }
 
-if(edad >=18 ){
-
+if(edad > 17 ){
     alert("eres mayor de edad")
 }
 
-else{
-    
-    alert("eres un niño");
+if(edad < 13){
+    alert("eres nino");
 }
 
 
