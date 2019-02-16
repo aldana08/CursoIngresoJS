@@ -1,4 +1,45 @@
 function mostrar()
 {
+var grupo
+var cuota
+var total
+var totalcuenta
+
+
+grupo = prompt("Ingresar cantidad de personas");
+
+totalcuenta = prompt("ingresar el total de la cuenta");
+
+grupo = parseInt(grupo);
+totalcuenta = parseInt(totalcuenta);
+
+total = totalcuenta / grupo;
+
+porcentaje = total * 0.10;
+
+porcentaje1 = porcentaje + total;
+
+iva = porcentaje1 * 0.21;
+
+iva2 = iva + porcentaje1;
+
+
+
+
+
+
+
+
+alert("La cuenta total es " + totalcuenta + " y cada integrante debe pagar " + iva2);
+
+
+
+
+
+
+
+
+
+
 
 }
