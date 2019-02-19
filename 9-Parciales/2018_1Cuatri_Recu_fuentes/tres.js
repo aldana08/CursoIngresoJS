@@ -13,9 +13,10 @@ totalcuenta = prompt("ingresar el total de la cuenta");
 grupo = parseInt(grupo);
 totalcuenta = parseInt(totalcuenta);
 
-total = totalcuenta / grupo;
 
 porcentaje = total * 0.10;
+
+total = totalcuenta / grupo;
 
 porcentaje1 = porcentaje + total;
 
