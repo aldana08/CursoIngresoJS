@@ -10,37 +10,22 @@ function mostrar()
     switch(hora){
 
         case 6 :
-        console.log("es de mañana");
-        break;
-
         case 7 :
-        console.log("es de mañana");
-        break;
-
         case 8 :
-        console.log("es de mañana");
-        break;
-
         case 9 :
-        console.log("es de mañana");
-        break;
-
         case 10 :
-        console.log("es de mañana");
-        break;
-
         case 11 :
-        console.log("es de mañana");
+        alert("es de mañana");
         break;
     }
 
     if(hora){
 
-        console.log("es de tarde");
+        alert("es de tarde");
     }
 
     else{
-        console.log("es de noche");
+        alert("es de noche");
     }
 
 
