@@ -7,28 +7,20 @@ function mostrar()
 
     switch (nombre) {
         case 'mercurio':
-          console.log('Aca hace mas calor');
-          break;
         case 'venus':
-          console.log('Aca hace mas calor');
+          alert('Aca hace mas calor');
           break;
+        
         case 'tierra':
-          console.log('Aca vivimos');
+          alert('Aca vivimos');
           break;
+
         case 'marte':
-          console.log('Aca hace mas calor');
-          break;
-          case 'jupiter':
-          console.log('Aca hace mas calor');
-          break;
-          case 'saturno':
-          console.log('Aca hace mas frio');
-          break;
-          case 'urano':
-          console.log('Aca hace mas frio');
-          break;
-          case 'neptuno':
-          console.log('Aca hace mas frio');
+        case 'jupiter':
+        case 'saturno':
+        case 'urano':
+        case 'neptuno':
+          alert('Aca hace mas frio');
           break;
           
         default:
