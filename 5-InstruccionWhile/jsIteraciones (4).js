@@ -1,25 +1,14 @@
 function mostrar()
 {
+	var num = 0;
 
-	var cont;
-	
-	cont = 0;
-
-	var numero = prompt("ingrese un número entre 0 y 10.");
-
-	document.getElementById("Numero").value = numero;
-
-
-	while(numero >0 && numero<9){
-
-		numero = prompt("Numero erroneo");
-
-		console.log (cont++);
-
+	while(num >= 0 && num <= 9){
+		//numero = prompt("Numero erroneo");
+		var num = prompt("ingrese un número entre 0 y 9.");
+		document.getElementById("Numero").value = num;
 	}
 
-	if(numero > 10){
-
+	if(num < 0 && num > 9){
 		alert("No es un numero del 0 al 9");
 	}
 

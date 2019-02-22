@@ -9,9 +9,13 @@ function mostrar()
 	while(cont <= 10){
 
 		
-		console.log  (cont++);
+		console.log(cont);
+
+		cont++;
 
 
 	}
+
+	alert("Numero mayor a 10");
 
 }//FIN DE LA FUNCIÓN

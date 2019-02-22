@@ -5,9 +5,11 @@ function mostrar()
 	var cont;
 	cont = 10;
 
-	while(cont>0){
+	while(cont>1){
 
-		console.log(cont--)
+		console.log(cont);
+
+		cont--;
 
 
 	}
