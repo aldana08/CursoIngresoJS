@@ -6,23 +6,30 @@ function mostrar()
 	var numeros;
 
 
-while(contador < 5){   
+while(contador < 5){
+
+contador++;
 
 numeros = prompt("Ingrese un numero");
 
 numeros = parseInt(numeros);
 
+while(isNaN(numeros)){
+
+  numeros = prompt();
+  numeros = parseInt(numeros);
+}
+
 acumulador = acumulador + numeros;
 
-contador++;
+
 
 }
 
 
-
 document.getElementById('suma').value=acumulador;
 
-document.getElementById('promedio').value=acumulador/5;
+document.getElementById('promedio').value=acumulador/contador;
 
 
 }//FIN DE LA FUNCIÓN
