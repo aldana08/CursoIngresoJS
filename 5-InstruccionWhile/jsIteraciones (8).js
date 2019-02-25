@@ -16,18 +16,22 @@ function mostrar()
 
     positivo = parseInt(positivo);
 
-		positivo = positivo + numeros;
-
-		contador++;
-
-    respuesta = prompt("Desea seguir agregando numeros?");
-
-    document.getElementById('suma').value=positivo;
-
     if(numeros<1){
 
       negativo = negativo * numeros;
+      
+		  positivo = positivo + numeros;
+
+		  contador++;
+
+      respuesta = prompt("Desea seguir agregando numeros?");
+
+      document.getElementById('suma').value=positivo;
+      
     }
+
+
+
 
   }
 

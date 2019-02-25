@@ -3,31 +3,26 @@ function mostrar()
 
 	var contador=0;
 	var acumulador=0;
-	var respuesta='si';
+	var respuesta="si";
 	var numeros;
 
 	while(respuesta == "si"){
 
 		numeros = prompt("ingrese un numero");
-
 		numeros = parseInt(numeros);
 
-		acumulador = acumulador + numeros;
-
-		contador++;
-
-		respuesta = prompt("Desea seguir agregando numeros?");
-
+		if(Number.isNaN(numeros) == false){
+			acumulador = acumulador + numeros;
+			respuesta = prompt("Desea seguir agregando numeros?");
+			contador++;
+		}else{
+			alert("No es un numero valido,ingrese numero nuevamente");
+		}
 
 	}
 
-	acumulador = parseInt(acumulador);
-
-	contador = parseInt(contador);
-
-
-document.getElementById('suma').value=acumulador;
-document.getElementById('promedio').value = acumulador/contador;
+	document.getElementById('suma').value=acumulador;
+	document.getElementById('promedio').value = acumulador/contador;
 
 }//FIN DE LA FUNCIÓN
 
