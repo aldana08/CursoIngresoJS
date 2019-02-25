@@ -13,7 +13,7 @@ function mostrar()
 
 		if(Number.isNaN(numeros) == false){
 			acumulador = acumulador + numeros;
-			respuesta = prompt("Desea seguir agregando numeros?");
+			respuesta = prompt("Desea seguir agregando numeros? si/no");
 			contador++;
 		}else{
 			alert("No es un numero valido,ingrese numero nuevamente");
@@ -25,6 +25,8 @@ function mostrar()
 	document.getElementById('promedio').value = acumulador/contador;
 
 }//FIN DE LA FUNCIÓN
+
+
 
 
 
