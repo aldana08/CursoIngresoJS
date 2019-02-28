@@ -1,18 +1,18 @@
 function mostrar()
 {
 
-	var contador=0;
+	//var contador;
 	// declarar variables
-  var maximo=0;
-  var minimo=0;
-  var numero=0;
+  var maximo;
+  var minimo;
+  var numero;
   var bandera=true;
 
 	var respuesta='si';
 
   //while(respuesta!='no')
 
-  while(confirm !==true ){
+  while(respuesta){
 
     do{
       numero=prompt("Ingrese un numero");
@@ -35,6 +35,7 @@ function mostrar()
 
           minimo=numero;
         }
+          respuesta = confirm();
       }
 
     }
