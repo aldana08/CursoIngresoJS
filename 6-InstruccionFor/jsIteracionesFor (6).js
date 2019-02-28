@@ -1,29 +1,31 @@
 function mostrar()
 {
 
-    var contPares=0;
+    var contPares = 0;
     numeroIngresado = prompt("Ingrese un numero");
-    numeroIngresado=parseInt(numeroIngresado);
+    numeroIngresado = parseInt(numeroIngresado);
+
+    for(i = 0 ;i < numeroIngresado; i++){
+
+        if(i % 2 == 0){
+            console.log(i);
+            contPares++;
+        }
+    }
+ 
+
+
 
     while(isNaN(numeroIngresado)){
-        
-                numeroIngresado= prompt("Ingrese un numero");
-                
-               }
+        numeroIngresado= prompt("Ingrese un numero");
+    }
         
     for(var i=1; i< numeroIngresado; i++){
-
        if(i % 2 == 0){
-
         console.log(i);
-
         contPares++;
        }
-    
- 
-    
-
-    
     }
-
+/**/
 }//FIN DE LA FUNCIÓN
+
