@@ -1,17 +1,17 @@
 function mostrar()
 {
 
+var sexo;
 
-var sexo = prompt("ingrese f ó m .");
+sexo = prompt("Ingrese su sexo f o m")
 
-while(sexo !== "f" && sexo !== "m"){
+while(sexo !="f" && sexo != "m"){
 
-  sexo = prompt("Sexo erroneo, vuelva a ingresarlo");
-
-  document.getElementById('Sexo').value=sexo;
+  alert("Sexo ingresado no es valido")
+  sexo = prompt("Ingrese su sexo f o m")
 
 }
 
-document.getElementById('Sexo').value=sexo;
+document.getElementById("Sexo").value = sexo;
 
 }//FIN DE LA FUNCIÓN

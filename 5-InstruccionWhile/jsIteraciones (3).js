@@ -1,22 +1,11 @@
 function mostrar()
 {
-    var cont;
+var clave;
 
-    cont = 1;
+clave = prompt("Ingrese la clave");
 
-var clave = prompt("ingrese el número clave.");
-
-    while(clave != "utn750" && cont <3){
-
-        clave = prompt("Error ingrese la clave nuevamente");
-
-        cont++;
-
-    
-}
-if(cont == 3){
-    
-    alert("Se ingresaron 3 intentos. No se pueden ingresar mas");
+while(clave != "utn750"){
+    clave = prompt("La clave es incorrecta. Ingrese la clave nuevamente");
 }
 
 }//FIN DE LA FUNCIÓN

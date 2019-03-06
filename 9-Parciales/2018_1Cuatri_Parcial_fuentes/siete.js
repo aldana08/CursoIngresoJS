@@ -2,61 +2,51 @@ function mostrar()
 {
     var nota;
     var sexo;
-    var sumaNotas = 0;
-    var i=0;
-    var notaMasBaja = 10;
-    var sexoDeNotaMasBaja;
-    var varonesConNotaMayorASeis = 0;
+    var cont=0;
+    var totalNotas=0;
+    var promedioNotas;
+    var notaMasBaja=10;
+    var sexoNotaMasBaja;
+    var notaMayorYMasc=0;
 
-    while(i < 5){
-        nota = prompt("Ingrese nota obtenida entre 0 y 10");
-        nota = parseInt(nota);
-        
-        //valido que no sea una letra
+    while(cont <5){
+        nota = prompt("Ingrese la nota obtenida");
+
         while(isNaN(nota)){
-            nota = prompt("Ingrese una nota numerica");
-            nota = parseInt(nota);
-        }
-
-        //valido que sea un numero entre 0 y 10
-        while(nota < 0 || nota > 10){
-            nota = prompt("Ingrese una nota entre 0 y 10");
-            nota = parseInt(nota);  
-        }
-
-        sexo = prompt("Ingrese el sexo del alumno(F o M)");
-
-        //valido que sea F o M
-        while(sexo !="f" && sexo !="m"){
-            sexo = prompt("Ingrese F o M");
+            nota = prompt("Error, ingrese nota nuevamente");
         }
         
-        //sumo notas para obtener promedio
-        sumaNotas = sumaNotas + nota;
+        while(nota <=0 || nota >=10){
+            nota = prompt("Error, ingrese nota entre 0 y 10");
+        }
+        nota = parseInt(nota);
 
-        //guardo nota mas baja
+        sexo = prompt("Ingrese su genero f o m");
+
+        while(sexo !="f" && sexo !="m"){
+            sexo = prompt("Error, ingrese f o m")
+        }
+        totalNotas = totalNotas + nota;
+
         if(notaMasBaja > nota){
             notaMasBaja = nota;
-            sexoDeNotaMasBaja = sexo;
+            sexoNotaMasBaja = sexo;
         }
-
-        //calculo cant de M con nota mayor o igual a 6
-        if(sexo == "m" && nota >= 6){
-            varonesConNotaMayorASeis++;
+        if(nota >= 6 && sexo == "m"){
+            notaMayorYMasc++;
         }
-
-        i++;
+        cont++;   
     }
 
-    //alert("El promedio de las notas es: " + sumaNotas / i);
-    //alert("La nota mas baja es: " + notaMasBaja + " y su sexo es: " + sexoDeNotaMasBaja);
-    //alert("Cantidad de varones con nota mayor o igual a 6: " + varonesConNotaMayorASeis);
+    promedioNotas = totalNotas / cont;
 
-    alert("El promedio de las notas es: " + sumaNotas / i +
-    "\nLa nota mas baja es: " + notaMasBaja + " y su sexo es: " + sexoDeNotaMasBaja +
-    "\nCantidad de varones con nota mayor o igual a 6: " + varonesConNotaMayorASeis);
+    alert(" El promedio de las notas totales es " + promedioNotas + 
+    " \nLa nota mas baja es " + notaMasBaja + 
+    " \nY el genero de la persona con la nota mas baja es " + sexoNotaMasBaja + 
+    " \nLa cantidad de masculinos con nota mayor o igual a 6 es " + notaMayorYMasc)
 
-    
+
+
 
 }
 

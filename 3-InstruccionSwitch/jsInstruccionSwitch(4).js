@@ -1,84 +1,36 @@
 function mostrar()
 {
-//tomo la edad  
-var mesDelAño = document.getElementById('mes').value;
+var mes;
 
-//alert (mesDelAño);
+mes = document.getElementById("mes").value;
+
+switch(mes){
+
+    case "Febrero":
+        alert("Este mes tiene 28 dias");
+        break;
+
+    case "Abril":
+    case "Junio":
+    case "Septiembre":
+    case "Noviembre":
+        alert("Este mes tiene 30 dias");
+        break;
+
+    case "Enero":
+    case "Marzo":
+    case "Mayo":
+    case "Julio":
+    case "Agosto":
+    case "Octubre":
+    case "Diciembre":
+        alert("Este mes tiene 31 dias");
+        break;
+
+    default:
+
+}
 	
-	switch(mesDelAño){
-
-        case "Enero":
-
-            alert("Este mes tiene 31 dias");
-
-        break;
-
-        case "Febrero":
-        
-                    alert("Este mes tiene 28 dias");
-        
-        break;
-
-        case "Marzo":
-        
-                    alert("Este mes tiene 31 dias");
-        
-        break;
-
-        case "Abril":
-        
-                    alert("Este mes tiene 30 dias");
-        
-         break;
-
-         case "Mayo":
-         
-                     alert("Este mes tiene 31 dias");
-         
-        break;
-
-        case "Junio":
-        
-                    alert("Este mes tiene 30 dias");
-        
-        break;
-
-        case "Julio":
-        
-                    alert("Este mes tiene 31 dias");
-        
-        break;
-
-        case "Agosto":
-                
-                    alert("Este mes tiene 31 dias");
-                
-        break;
-
-        case "Septiembre":
-        
-                    alert("Este mes tiene 30 dias");
-        
-         break;
-
-         case "Octubre":
-         
-                     alert("Este mes tiene 31 dias");
-         
-        break;
-
-        case "Noviembre":
-        
-                    alert("Este mes tiene 30 dias");
-        
-        break;
-
-        case "Diciembre":
-        
-                    alert("Este mes tiene 31 dias");
-        
-        break;
-    }
 
 
 

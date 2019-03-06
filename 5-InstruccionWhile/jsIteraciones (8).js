@@ -1,36 +1,37 @@
 function mostrar()
 {
+    var num;
+	var suma=0;
+    var confirm=true;
+    var multiplicar=1;
+	
+	while(confirm == true){
 
-	var contador=0;
-	var positivo=0;
-	var negativo=1;
+		num = prompt("Ingrese un numero");
 
-  var respuesta="si";
-  var numero;
+		while(isNaN(num)){
+			num = prompt("No se ingreso numero, intentelo de nuevo");
+		}
 
-  while(respuesta == "si"){
-    numero = prompt("ingrese un numero");
-    numero = parseInt(numero);
+        num = parseInt(num);
+        
+        if(num >=0){
+		    suma = suma + num;
+		    
+        }
 
+        if(num < 0){
+            multiplicar = multiplicar * num;
+            
+        }
 
-    if(numero >= 0){
-      positivo = positivo + numero;
-      //contador++;
-    }else{
-      negativo = negativo * numero;
-    }
-
-    respuesta = prompt("Desea seguir agregando numeros?si/no");
-
-  }
-
-//alert(positivo);
+		confirm = window.confirm("desea agregar otro numero mas?");
+		
+	}
 
 
-  //acumulador = parseInt(acumulador);
-  //contador = parseInt(contador);
-  document.getElementById("suma").value = positivo;
-  document.getElementById("producto").value = negativo;
+	document.getElementById("suma").value = suma;
+	document.getElementById('producto').value=multiplicar;
 
 }//FIN DE LA FUNCIÓN
 

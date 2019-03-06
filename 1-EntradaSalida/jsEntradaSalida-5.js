@@ -2,14 +2,18 @@
 ej.: "Usted se llama José y tiene 66 años" 	*/
 function mostrar()
 {	
-   var nombre
+    var nombre;
+    var edad;
 
-   var edad
+    nombre = prompt("Ingrese su nombre");
+    edad = prompt("Ingrese su edad");
 
-    nombre=document.getElementById("elNombre").value;
-    edad=document.getElementById("laEdad").value;
+    edad = parseInt(edad);
 
-    alert("Usted se llama "+ nombre +" y tiene " + edad);
+    document.getElementById("elNombre").value = nombre;
+    document.getElementById("laEdad").value = edad;
+
+    alert("Usted se llama " + nombre + " y tiene " + edad + " años");
     
 }
 
